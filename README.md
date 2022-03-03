@@ -1,1 +1,2 @@
 # Informatics_ITIS_Python
+ХАФИЗОВ_АНДЖЕ_ДМИТРИЕВИЧ_11-105
