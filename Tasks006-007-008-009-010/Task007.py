@@ -30,20 +30,29 @@
 
 def infinite_sequence3():
     b = int(input())
-    while b!=0:
-        prime = True
-        for i in range(2, b%10):
-            if b%10 % i == 0:
-                prime = False
-                break
-        if prime:
-            yield b%10
-        b=b//10
+    e=list()
+    z1=b
+    while z1!=0:
+        z=z1%10
+        e.append(z)
+        z1=z1//10
+    for i in range(b):
+        d = list()
+        for c in range(2,b+1):
+            if i%c==0:
+                flag=True
+                for c1 in range(2,c):
+                    if c%c1==0:
+                        flag=False
+                if flag==True:
+                    d.append(c)
+#       print(i, d, set(d), set(e))
+        if set(d)|set(e) == set(e):
+            yield i
 
 
 # for i in infinite_sequence():
 #     print(i)
 # for i in infinite_sequence1():
 #     print(i)
-for i in infinite_sequence3():
-    print(i)
+print(list(infinite_sequence3()))
