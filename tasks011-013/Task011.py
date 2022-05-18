@@ -1,21 +1,18 @@
 
 class Homework:
-    global glob_change
+    global global_per # global
 
-    def first_homework_metod(self, change_2: int = 5, change_3: int = 5) -> None:
-        # enclosing
-        encl_change: int = 10
+    def first_metod(self, change_2: float = 3, change_3: float = 5) -> None:
+        encl_per: float = 12         # enclosing
 
-        def first_homework_metod_in_menod() -> None:
-            # local
-            loc_change: int = 12
-            print(f'sum = {glob_change + encl_change + loc_change}')
+        def first_metod_in_menod() -> None:
+            local_per: float = 20             # local
+            print(f'общяя сумма = {global_per + encl_per + local_per}')
 
-        first_homework_metod_in_menod()
-        print(f'var2 + var3 = {change_2 + change_3}')
+        first_metod_in_menod()
+        print(f'сумма 2 и 3 = {change_2 + change_3}')
 
 
-# global
-glob_change: int = 1
+global_per: int = 1 # global
 sc = Homework()
-sc.first_homework_metod()
+sc.first_metod()
