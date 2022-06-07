@@ -1,23 +1,3 @@
-# count = {}
-# for w in open('Text.txt').read().split():
-#     if w in count:
-#         count[w] += 1
-#     else:
-#         count[w] = 1
-# for word, times in count.items():
-#     print(word, times)
-# print(len(set(open('Text.txt').read().lower().split())))
-# f = open("Text.txt", "r")
-# z=0
-# while(True):
-#     line = f.readline()
-#     print(line)
-#     z+=(len(set(line.lower().split())))
-#     if not line:
-#         break
-#
-# f.close()
-# print(z)
 from functools import reduce
 import doctest
 z=0
